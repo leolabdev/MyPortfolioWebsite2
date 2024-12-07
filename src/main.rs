@@ -14,7 +14,6 @@ fn App() -> Html {
             counter.set(value);
         }
     };
-
     html! {
         <div>
             <button {onclick}>{ "+1" }</button>
