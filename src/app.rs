@@ -3,13 +3,11 @@ use yew::prelude::*;
 #[function_component]
 pub fn App() -> Html {
     html! {
-        <h1 class="text-3xl text-blue-600/100 font-bold underline">
+        <h1 class="text-3xl  text-blue-400 font-bold underline">
         {"Hello World!"}
         </h1>
     }
 }
-
-
 
 // let counter = use_state(|| 0);
 // let onclick = {
