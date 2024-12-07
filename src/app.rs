@@ -2,7 +2,11 @@ use yew::prelude::*;
 
 #[function_component]
 pub fn App() -> Html {
-    html! {<div>{"Hello World!"}</div>}
+    html! {
+        <h1 class="text-3xl text-blue-600/100 font-bold underline">
+        {"Hello World!"}
+        </h1>
+    }
 }
 
 
