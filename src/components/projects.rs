@@ -25,15 +25,15 @@ pub fn projects(props: &ProjectsProps) -> Html {
                 { for props.projects.iter().map(|project| {
                     let reverse_class = if project.reverse { "lg:flex-row-reverse" } else { "lg:flex-row" };
                     let border_class = if project.reverse {
-                         "border-r border-t border-r-custom-add border-t-custom-add p-4"
+                          "border-l sm:border-t border-b border-l-custom-add border-b-custom-add sm:border-t-custom-add p-4"
                     } else {
-                         "border-l border-t border-l-custom-add border-t-custom-add p-4"
+                          "border-r border-b sm:border-b-0 sm:border-t border-r-custom-add border-b-custom-add sm:border-t-custom-add p-4"
                     };
                     html! {
                         // <article class={format!("flex flex-col {} items-center gap-8", reverse_class)}>
 
-                        <article class="grid gap-4 sm:grid-cols-10">
-                           <div class="col-span-6 col-start-5 row-start-1 row-end-2 order-2 text-right">
+                        <article class="sm:grid gap-4 sm:grid-cols-10">
+                           <div class="col-span-6 col-start-5 row-start-1 row-end-2 order-2 sm:text-right">
                                 <h3 class="text-sm">{ &project.subtitle }</h3>
                                 <h4 class="text-lg text-custom-add">{ &project.title }</h4>
                                 <p class="text-base mb-4 p-4 bg-custom-bg-add rounded-lg ">{ &project.description }</p>

@@ -28,7 +28,7 @@ pub fn app() -> Html {
                     "https://github.com/example".to_string(),
                 ),
             ],
-            reverse: false,
+            reverse: true,
             subtitle: "Workki AI".to_string(),
         },
         Project {

@@ -1087,8 +1087,29 @@ body {
 }
 
 @media (min-width: 640px) {
+  .sm\:grid {
+    display: grid;
+  }
+
   .sm\:grid-cols-10 {
     grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+
+  .sm\:border-t {
+    border-top-width: 1px;
+  }
+
+  .sm\:border-b-0 {
+    border-bottom-width: 0px;
+  }
+
+  .sm\:border-t-custom-add {
+    --tw-border-opacity: 1;
+    border-top-color: rgb(134 251 251 / var(--tw-border-opacity, 1));
+  }
+
+  .sm\:text-right {
+    text-align: right;
   }
 }
 
