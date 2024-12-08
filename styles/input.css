@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Oxygen';
+    src: url('/assets/fonts/Oxygen-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    src: url('/assets/fonts/Oxygen-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    src: url('/assets/fonts/Oxygen-Light.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oxygen Mono';
+    src: url('/assets/fonts/OxygenMono-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+
+
 @layer base {
     body {
         font-family: 'Oxygen', sans-serif;

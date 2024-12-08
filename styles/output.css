@@ -659,20 +659,16 @@ body {
   justify-content: center;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .rounded {
@@ -735,11 +731,6 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .pb-40 {
   padding-bottom: 10rem;
 }
@@ -773,6 +764,11 @@ body {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -792,6 +788,15 @@ body {
   font-size: 150%;
 }
 
+.text-\[200\%\] {
+  font-size: 200%;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -805,20 +810,6 @@ body {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-\[200\%\] {
-  font-size: 200%;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-extralight {
@@ -860,12 +851,56 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.text-\[200\] {
-  color: 200;
-}
-
 .underline {
   text-decoration-line: underline;
+}
+
+@font-face {
+  font-family: 'Oxygen';
+
+  src: url('/assets/fonts/Oxygen-Regular.ttf') format('truetype');
+
+  font-weight: 400;
+
+  /* Regular */
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oxygen';
+
+  src: url('/assets/fonts/Oxygen-Bold.ttf') format('truetype');
+
+  font-weight: 700;
+
+  /* Bold */
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oxygen';
+
+  src: url('/assets/fonts/Oxygen-Light.ttf') format('truetype');
+
+  font-weight: 300;
+
+  /* Light */
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oxygen Mono';
+
+  src: url('/assets/fonts/OxygenMono-Regular.ttf') format('truetype');
+
+  font-weight: 400;
+
+  /* Regular */
+
+  font-style: normal;
 }
 
 .hover\:bg-custom-active:hover {
