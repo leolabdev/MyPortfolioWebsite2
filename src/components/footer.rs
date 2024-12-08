@@ -3,7 +3,7 @@ use yew::prelude::*;
 #[function_component(Footer)]
 pub fn footer() -> Html {
     html! {
-        <footer class="text-center py-16 text-custom-main bg-custom-bg-add">
+        <footer class="text-center py-16 px-2 text-custom-main bg-custom-bg-add">
             <h2 class="text-3xl font-semibold">{"Leo Hannolainen · Web developer"}</h2>
             <ul class="flex justify-center gap-12 mt-8 text-2xl">
                 <li>
