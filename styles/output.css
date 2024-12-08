@@ -154,7 +154,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Oxygen, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -243,7 +243,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Oxygen mono, monospace;
   /* 1 */
   font-feature-settings: normal;
   /* 2 */
@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+body {
+  font-family: 'Oxygen', sans-serif;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -597,6 +601,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .grid {
@@ -659,14 +667,14 @@ video {
   border-width: 1px;
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-}
-
 .bg-blue-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity, 1));
+}
+
+.bg-custom-bg-add {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 19 33 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gradient-to-r {
@@ -716,11 +724,11 @@ video {
 }
 
 .font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Oxygen mono, monospace;
 }
 
 .font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Oxygen, sans-serif;
 }
 
 .text-2xl {
@@ -765,6 +773,11 @@ video {
   line-height: 1.5rem;
 }
 
+.text-custom-add {
+  --tw-text-opacity: 1;
+  color: rgb(134 251 251 / var(--tw-text-opacity, 1));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -772,6 +785,16 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.hover\:text-custom-active:hover {
+  --tw-text-opacity: 1;
+  color: rgb(122 71 199 / var(--tw-text-opacity, 1));
+}
+
+.group:hover .group-hover\:text-custom-active {
+  --tw-text-opacity: 1;
+  color: rgb(122 71 199 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 1024px) {
