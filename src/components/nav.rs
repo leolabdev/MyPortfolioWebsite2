@@ -3,7 +3,7 @@ use yew::prelude::*;
 #[function_component(Nav)]
 pub fn nav() -> Html {
     html! {
-        <nav class="bg-custom-bg-add text-custom-main text-lg font-sans py-16 px-4">
+        <nav class="bg-custom-bg-add text-custom-main text-lg font-mono py-16 px-4">
             <ul class="flex flex-wrap justify-center items-center gap-8 max-w-[1200px] mx-auto">
                 <li class="w-full text-center lg:w-auto lg:text-left lg:mr-auto">
                     <h1 class="text-2xl group hover:text-custom-active inline-flex font-medium">
@@ -28,7 +28,7 @@ pub fn nav() -> Html {
                     </a>
                 </li>
                 <li>
-                    <a href="https://drive.google.com/file/d/1roSodsRcVNLScHU9ZzziS8zeNP9hSjjl" target="_blank" class="bg-hotmag py-2 px-4 rounded font-medium bg-custom-special hover:bg-custom-active">
+                    <a href="https://drive.google.com/file/d/1roSodsRcVNLScHU9ZzziS8zeNP9hSjjl" target="_blank" class="bg-hotmag py-2 px-2 rounded font-medium bg-custom-special hover:bg-custom-active">
                         {"Resume"}
                     </a>
                 </li>
