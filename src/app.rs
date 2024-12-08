@@ -31,7 +31,7 @@ pub fn app() -> Html {
     ];
 
     html! {
-        <div class="bg-blue-950">
+        <div class="bg-custom-bg-main">
             <Nav />
             <Intro/>
             <Gradient />
