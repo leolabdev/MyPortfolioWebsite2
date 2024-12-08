@@ -667,6 +667,14 @@ body {
   gap: 2rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -799,6 +807,20 @@ body {
   line-height: 1.75rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-\[200\%\] {
+  font-size: 200%;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-extralight {
   font-weight: 200;
 }
@@ -836,6 +858,10 @@ body {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-\[200\] {
+  color: 200;
 }
 
 .underline {
