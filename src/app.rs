@@ -1,9 +1,12 @@
+//npx tailwindcss -i ./styles/input.css -o ./styles/output.css --watch
+//trunk serve
+
 use yew::prelude::*;
 
 #[function_component]
 pub fn App() -> Html {
     html! {
-        <h1 class="text-3xl  text-blue-400 font-bold underline">
+        <h1 class="text-3xl  text-red-200 font-bold underline">
         {"Hello World!"}
         </h1>
     }
