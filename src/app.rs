@@ -1,31 +1,45 @@
-//npx tailwindcss -i ./styles/input.css -o ./styles/output.css --watch
-//trunk serve
-
 use yew::prelude::*;
+use crate::components::contact::Contact;
+use crate::components::footer::Footer;
+use crate::components::nav::Nav;
+use crate::components::projects::{Project, Projects};
+use crate::components::gradient::Gradient;
+use crate::components::intro::Intro;
 
-#[function_component]
-pub fn App() -> Html {
+#[function_component(App)]
+pub fn app() -> Html {
+    let projects = vec![
+        Project {
+            title: "Workki AI".to_string(),
+            description: "Added end-to-end tests with Cypress and migrated static data to Sanity CMS.".to_string(),
+            technologies: vec!["Vue 3".to_string(), "Nuxt.js".to_string(), "Cypress".to_string(), "Sanity CMS".to_string()],
+            image_url: "/img/workki.PNG".to_string(),
+            links: vec![
+                ("Website".to_string(), "https://workkiai.com/".to_string()),
+                ("GitHub".to_string(), "https://github.com/example".to_string()),
+            ],
+        },
+        Project {
+            title: "Thesis Project".to_string(),
+            description: "Designed and developed a web application for managing device content across LAB UAS.".to_string(),
+            technologies: vec!["React".to_string(), "Redux Toolkit".to_string(), "NestJS".to_string()],
+            image_url: "/img/thesis.PNG".to_string(),
+            links: vec![
+                ("Thesis Report".to_string(), "https://www.theseus.fi/handle/10024/812819".to_string()),
+            ],
+        },
+    ];
+
     html! {
-        <h1 class="text-3xl  text-red-200 font-bold underline">
-        {"Hello World!"}
-        </h1>
+        <div class="bg-blue-950">
+            <Nav />
+            <Intro/>
+            <Gradient />
+            <Projects projects={projects} />
+            <Gradient />
+            <Contact/>
+            <Gradient />
+            <Footer/>
+        </div>
     }
 }
-
-// let counter = use_state(|| 0);
-// let onclick = {
-//     let counter = counter.clone();
-//     move |_| {
-//         let value = *counter + 1;
-//         counter.set(value);
-//     }
-// };
-//
-// html! {
-//     <div>
-//         <button {onclick}>{ "+1" }</button>
-//         <p>{ *counter }</p>
-//     </div>
-// }
-
-// let style = use_style!("color: red;");
