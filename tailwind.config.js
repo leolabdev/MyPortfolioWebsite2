@@ -20,6 +20,9 @@ module.exports = {
         sans: ['Oxygen', 'sans-serif'],
         mono: ['Oxygen mono', 'monospace'],
       },
+      backgroundImage: {
+        'gradient': 'linear-gradient(90deg, rgba(143, 96, 213, 1) 0%, rgba(0, 212, 255, 1) 100%)'
+      },
     },
   },
   plugins: [],
