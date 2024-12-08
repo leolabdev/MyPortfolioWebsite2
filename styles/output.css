@@ -803,6 +803,34 @@ body {
   line-height: 1.5rem;
 }
 
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.tracking-tighter {
+  letter-spacing: -0.05em;
+}
+
+.tracking-\[-0\.02em\] {
+  letter-spacing: -0.02em;
+}
+
+.tracking-\[-0\.1em\] {
+  letter-spacing: -0.1em;
+}
+
+.tracking-\[-0\.0\.6em\] {
+  letter-spacing: -0.0.6em;
+}
+
+.tracking-\[-0\.6em\] {
+  letter-spacing: -0.6em;
+}
+
+.tracking-\[-0\.06em\] {
+  letter-spacing: -0.06em;
+}
+
 .text-custom-add {
   --tw-text-opacity: 1;
   color: rgb(134 251 251 / var(--tw-text-opacity, 1));
