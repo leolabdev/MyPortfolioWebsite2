@@ -5,14 +5,14 @@ pub fn intro() -> Html {
     html! {
         <header id="intro" class="px-4 pt-16 pb-40 mx-auto text-left bg-custom-bg-add text-custom-main">
             <div class="max-w-[1200px] mx-auto">
-                <p class="font-mono text-lg">
+                <p class="font-mono text-lg leading-[4rem]">
                     {"Hi, my name is"}
                     <br/>
                     <span class="font-sans text-6xl text-custom-add">
                         {"Leo Hannolainen"}
                     </span>
                 </p>
-                <h2 class="text-5xl font-light">
+                <h2 class="text-5xl font-medium leading-[4rem]">
                     {"I'm a web developer with a passion for building scalable web applications"}
                 </h2>
                 <p class="mt-4 text-lg leading-6">

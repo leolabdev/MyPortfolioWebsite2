@@ -619,10 +619,6 @@ body {
   width: 100%;
 }
 
-.max-w-4xl {
-  max-width: 56rem;
-}
-
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -708,6 +704,11 @@ body {
   padding: 1rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -728,17 +729,12 @@ body {
   padding-bottom: 2rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.pb-40 {
+  padding-bottom: 10rem;
 }
 
 .pr-2 {
   padding-right: 0.5rem;
-}
-
-.pb-40 {
-  padding-bottom: 10rem;
 }
 
 .pt-16 {
@@ -766,14 +762,14 @@ body {
   line-height: 2rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-\[150\%\] {
@@ -795,67 +791,24 @@ body {
   line-height: 1.75rem;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.font-light {
-  font-weight: 300;
+.font-medium {
+  font-weight: 500;
 }
 
 .font-semibold {
   font-weight: 600;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
 .leading-6 {
   line-height: 1.5rem;
 }
 
+.leading-\[4rem\] {
+  line-height: 4rem;
+}
+
 .tracking-tight {
   letter-spacing: -0.025em;
-}
-
-.tracking-tighter {
-  letter-spacing: -0.05em;
-}
-
-.tracking-\[-0\.02em\] {
-  letter-spacing: -0.02em;
-}
-
-.tracking-\[-0\.1em\] {
-  letter-spacing: -0.1em;
-}
-
-.tracking-\[-0\.0\.6em\] {
-  letter-spacing: -0.0.6em;
-}
-
-.tracking-\[-0\.6em\] {
-  letter-spacing: -0.6em;
-}
-
-.tracking-\[-0\.06em\] {
-  letter-spacing: -0.06em;
 }
 
 .text-custom-add {
@@ -892,20 +845,6 @@ body {
   color: rgb(122 71 199 / var(--tw-text-opacity, 1));
 }
 
-@media (min-width: 768px) {
-  .md\:mr-auto {
-    margin-right: auto;
-  }
-
-  .md\:flex-auto {
-    flex: 1 1 auto;
-  }
-
-  .md\:text-left {
-    text-align: left;
-  }
-}
-
 @media (min-width: 1024px) {
   .lg\:mr-auto {
     margin-right: auto;
@@ -913,10 +852,6 @@ body {
 
   .lg\:w-auto {
     width: auto;
-  }
-
-  .lg\:flex-auto {
-    flex: 1 1 auto;
   }
 
   .lg\:flex-row {
