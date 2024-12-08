@@ -11,13 +11,25 @@ pub fn app() -> Html {
     let projects = vec![
         Project {
             title: "Workki AI".to_string(),
-            description: "Added end-to-end tests with Cypress and migrated static data to Sanity CMS.".to_string(),
-            technologies: vec!["Vue 3".to_string(), "Nuxt.js".to_string(), "Cypress".to_string(), "Sanity CMS".to_string()],
+            description:
+                "Added end-to-end tests with Cypress and migrated static data to Sanity CMS."
+                    .to_string(),
+            technologies: vec![
+                "Vue 3".to_string(),
+                "Nuxt.js".to_string(),
+                "Cypress".to_string(),
+                "Sanity CMS".to_string(),
+            ],
             image_url: "assets/img/workki.PNG".to_string(),
             links: vec![
                 ("Website".to_string(), "https://workkiai.com/".to_string()),
-                ("GitHub".to_string(), "https://github.com/example".to_string()),
+                (
+                    "GitHub".to_string(),
+                    "https://github.com/example".to_string(),
+                ),
             ],
+            reverse: false,
+            subtitle: "Workki AI".to_string(),
         },
         Project {
             title: "Thesis Project".to_string(),
@@ -27,6 +39,8 @@ pub fn app() -> Html {
             links: vec![
                 ("Thesis Report".to_string(), "https://www.theseus.fi/handle/10024/812819".to_string()),
             ],
+            reverse: true,
+            subtitle: "test".to_string()
         },
     ];
 
