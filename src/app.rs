@@ -10,9 +10,9 @@ use yew::prelude::*;
 pub fn app() -> Html {
     let projects = vec![
         Project {
-            title: "Workki AI".to_string(),
+            title: "Web pages".to_string(),
             description:
-                "Added end-to-end tests with Cypress and migrated static data to Sanity CMS."
+                "To date, I have successfully added end-to-end tests with Cypress, significantly enhancing application reliability. I adapted the frontend to meet evolving business needs and migrated static data and blog content to the Sanity CMS, optimizing content management workflows. Additionally, I updated SEO practices to align with the latest standards, resulting in improved search engine visibility and traffic. I continue to contribute to ongoing development and optimization efforts."
                     .to_string(),
             technologies: vec![
                 "Vue 3".to_string(),

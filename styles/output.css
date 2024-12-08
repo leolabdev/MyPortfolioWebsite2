@@ -574,8 +574,32 @@ body {
   position: static;
 }
 
+.order-2 {
+  order: 2;
+}
+
 .col-span-5 {
   grid-column: span 5 / span 5;
+}
+
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
+
+.col-start-5 {
+  grid-column-start: 5;
+}
+
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.row-start-1 {
+  grid-row-start: 1;
+}
+
+.row-end-2 {
+  grid-row-end: 2;
 }
 
 .mx-auto {
@@ -839,6 +863,10 @@ body {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .font-mono {
   font-family: Oxygen mono, monospace;
 }
@@ -1056,6 +1084,12 @@ body {
 .group:hover .group-hover\:text-custom-active {
   --tw-text-opacity: 1;
   color: rgb(122 71 199 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1024px) {
