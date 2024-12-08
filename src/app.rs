@@ -13,7 +13,7 @@ pub fn app() -> Html {
             title: "Workki AI".to_string(),
             description: "Added end-to-end tests with Cypress and migrated static data to Sanity CMS.".to_string(),
             technologies: vec!["Vue 3".to_string(), "Nuxt.js".to_string(), "Cypress".to_string(), "Sanity CMS".to_string()],
-            image_url: "img/workki.PNG".to_string(),
+            image_url: "assets/img/workki.PNG".to_string(),
             links: vec![
                 ("Website".to_string(), "https://workkiai.com/".to_string()),
                 ("GitHub".to_string(), "https://github.com/example".to_string()),
@@ -23,7 +23,7 @@ pub fn app() -> Html {
             title: "Thesis Project".to_string(),
             description: "Designed and developed a web application for managing device content across LAB UAS.".to_string(),
             technologies: vec!["React".to_string(), "Redux Toolkit".to_string(), "NestJS".to_string()],
-            image_url: "img/thesis.PNG".to_string(),
+            image_url: "assets/img/thesis.PNG".to_string(),
             links: vec![
                 ("Thesis Report".to_string(), "https://www.theseus.fi/handle/10024/812819".to_string()),
             ],
