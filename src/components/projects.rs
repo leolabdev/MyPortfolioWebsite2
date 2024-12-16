@@ -23,29 +23,34 @@ pub fn projects(props: &ProjectsProps) -> Html {
             <h2 class="text-2xl mb-8">{"Projects I'm proud of"}</h2>
             <div class="grid gap-8">
                 { for props.projects.iter().map(|project| {
-                    let reverse_class = if project.reverse { "lg:flex-row-reverse" } else { "lg:flex-row" };
-                    let border_class = if project.reverse {
-                          "border-l sm:border-t border-b sm:border-b-0 border-l-custom-add border-b-custom-add sm:border-t-custom-add p-4"
+                    let (text_col_start, image_col_start, text_align_class, border_class) = if project.reverse {
+                        (
+                            "col-start-1",
+                            "col-start-6",
+                            "sm:text-left",
+                            "border-l sm:border-t border-b sm:border-b-0 border-l-custom-add border-b-custom-add sm:border-t-custom-add p-4"
+                        )
                     } else {
-                          "border-r border-b sm:border-b-0 sm:border-t border-r-custom-add border-b-custom-add sm:border-t-custom-add p-4"
+                        (
+                            "col-start-5",
+                            "col-start-1",
+                            "sm:text-right",
+                            "border-r border-b sm:border-b-0 sm:border-t border-r-custom-add border-b-custom-add sm:border-t-custom-add p-4"
+                        )
                     };
-                    html! {
-                        // <article class={format!("flex flex-col {} items-center gap-8", reverse_class)}>
 
-                        <article class="sm:grid gap-4 sm:grid-cols-10">
-                           <div class="col-span-6 col-start-5 row-start-1 row-end-2 order-2 sm:text-right">
+                    html! {
+                        <article class="sm:grid gap-4 sm:grid-cols-10 relative">
+                            <div class={format!("col-span-6 {} row-start-1 row-end-2 order-2 {} relative z-10", text_col_start, text_align_class)}>
                                 <h3 class="text-sm">{ &project.subtitle }</h3>
                                 <h4 class="text-lg text-custom-add">{ &project.title }</h4>
-                                <p class="text-base mb-4 p-4 bg-custom-bg-add rounded-lg ">{ &project.description }</p>
+                                <p class="text-base mb-4 p-4 bg-custom-bg-add rounded-lg">{ &project.description }</p>
                             </div>
-
                             <img
                                 src={project.image_url.clone()}
                                 alt={format!("Screenshot of {}", project.title)}
-                                class={format!("rounded-3xl col-span-5 col-start-1 row-start-1 row-end-2 {}", border_class)}
+                                class={format!("rounded-3xl col-span-5 {} row-start-1 row-end-2 {}", image_col_start, border_class)}
                             />
-
-
                         </article>
                     }
                 })}
@@ -53,15 +58,3 @@ pub fn projects(props: &ProjectsProps) -> Html {
         </section>
     }
 }
-
-// <h4 class="text-md font-semibold">{"Technologies used:"}</h4>
-//                                 <ul class="list-disc ml-5 mb-4">
-//                                     { for project.technologies.iter().map(|tech| html! {
-//                                         <li>{ tech }</li>
-//                                     }) }
-//                                 </ul>
-//                                 <div class="flex gap-4">
-//                                     { for project.links.iter().map(|(name, url)| html! {
-//                                         <a href={url.clone()} target="_blank" class="hover:text-custom-active">{ name }</a>
-//                                     }) }
-//                                 </div>

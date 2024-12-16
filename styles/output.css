@@ -575,6 +575,14 @@ body {
   position: static;
 }
 
+.relative {
+  position: relative;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .order-2 {
   order: 2;
 }
@@ -587,12 +595,24 @@ body {
   grid-column: span 6 / span 6;
 }
 
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
 .col-start-1 {
   grid-column-start: 1;
 }
 
 .col-start-5 {
   grid-column-start: 5;
+}
+
+.col-start-7 {
+  grid-column-start: 7;
+}
+
+.col-start-6 {
+  grid-column-start: 6;
 }
 
 .row-start-1 {
@@ -781,16 +801,6 @@ body {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-44 {
-  padding-left: 11rem;
-  padding-right: 11rem;
 }
 
 .pb-40 {
@@ -991,6 +1001,10 @@ body {
   .sm\:border-t-custom-add {
     --tw-border-opacity: 1;
     border-top-color: rgb(134 251 251 / var(--tw-border-opacity, 1));
+  }
+
+  .sm\:text-left {
+    text-align: left;
   }
 
   .sm\:text-right {
