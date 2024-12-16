@@ -5,7 +5,7 @@ pub struct Project {
     pub title: String,
     pub subtitle: String,
     pub description: String,
-    pub technologies: Vec<String>,
+    pub technologies: Vec<(String, String)>,
     pub image_url: String,
     pub links: Vec<(String, String)>,
     pub reverse: bool,
@@ -41,11 +41,22 @@ pub fn projects(props: &ProjectsProps) -> Html {
 
                     html! {
                         <article class="sm:grid gap-4 sm:grid-cols-10 relative">
-                            <div class={format!("col-span-6 {} row-start-1 row-end-2 order-2 {} relative z-10", text_col_start, text_align_class)}>
-                                <h3 class="text-sm">{ &project.subtitle }</h3>
-                                <h4 class="text-lg text-custom-add">{ &project.title }</h4>
-                                <p class="text-base mb-4 p-4 bg-custom-bg-add rounded-lg">{ &project.description }</p>
-                            </div>
+                        <div class={format!("col-span-6 {} row-start-1 row-end-2 order-2 {} relative z-10", text_col_start, text_align_class)}>
+                            <h3 class="text-sm">{ &project.subtitle }</h3>
+                            <h4 class="text-lg text-custom-add">{ &project.title }</h4>
+                            <p class="text-base mb-4 p-4 bg-custom-bg-add rounded-lg">{ &project.description }</p>
+                            <h4>{"Technologies used include:"}</h4>
+                           <ul class={format!("flex gap-2 {}", if project.reverse { "justify-start" } else { "justify-end" })}>
+                                { for project.technologies.iter().map(|(name, url)|
+                                    {html! {
+                                        <li>
+                                            <a href={url.clone()} target="_blank" rel="noopener noreferrer">{name}</a>
+                                        </li>
+                                    }
+                                    })
+                                }
+                            </ul>
+                        </div>
                             <img
                                 src={project.image_url.clone()}
                                 alt={format!("Screenshot of {}", project.title)}
