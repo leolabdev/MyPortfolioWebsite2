@@ -25,7 +25,6 @@ pub fn projects(props: &ProjectsProps) -> Html {
                             "col-start-5",
                             "col-start-1",
                             "text-right",
-                            // "border-l border-t sm:border-b-0 sm:border-t border-l-custom-add border-t-custom-add sm:border-t-custom-add p-4"
                             "border-r border-t sm:border-b-0 sm:border-t border-r-custom-add border-t-custom-add sm:border-t-custom-add p-4"
                         )
                     };
