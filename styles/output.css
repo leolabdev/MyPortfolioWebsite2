@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -595,20 +595,12 @@ body {
   grid-column: span 6 / span 6;
 }
 
-.col-span-4 {
-  grid-column: span 4 / span 4;
-}
-
 .col-start-1 {
   grid-column-start: 1;
 }
 
 .col-start-5 {
   grid-column-start: 5;
-}
-
-.col-start-7 {
-  grid-column-start: 7;
 }
 
 .col-start-6 {
@@ -621,10 +613,6 @@ body {
 
 .row-end-2 {
   grid-row-end: 2;
-}
-
-.m-0 {
-  margin: 0px;
 }
 
 .mx-auto {
@@ -640,32 +628,12 @@ body {
   margin-bottom: 2rem;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
 }
 
 .inline-block {
@@ -704,22 +672,6 @@ body {
   max-width: 366px;
 }
 
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.list-disc {
-  list-style-type: disc;
-}
-
-.list-none {
-  list-style-type: none;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -744,20 +696,16 @@ body {
   gap: 3rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.text-wrap {
-  text-wrap: wrap;
 }
 
 .rounded {
@@ -772,10 +720,6 @@ body {
   border-radius: 0.5rem;
 }
 
-.border-b {
-  border-bottom-width: 1px;
-}
-
 .border-l {
   border-left-width: 1px;
 }
@@ -788,11 +732,6 @@ body {
   border-top-width: 1px;
 }
 
-.border-b-custom-add {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(134 251 251 / var(--tw-border-opacity, 1));
-}
-
 .border-l-custom-add {
   --tw-border-opacity: 1;
   border-left-color: rgb(134 251 251 / var(--tw-border-opacity, 1));
@@ -801,6 +740,11 @@ body {
 .border-r-custom-add {
   --tw-border-opacity: 1;
   border-right-color: rgb(134 251 251 / var(--tw-border-opacity, 1));
+}
+
+.border-t-custom-add {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(134 251 251 / var(--tw-border-opacity, 1));
 }
 
 .bg-custom-bg-add {
@@ -823,39 +767,12 @@ body {
   background-color: rgb(142 103 201 / var(--tw-bg-opacity, 1));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-opacity-10 {
-  --tw-bg-opacity: 0.1;
-}
-
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5;
-}
-
 .bg-gradient {
   background-image: linear-gradient(90deg, rgba(143, 96, 213, 1) 0%, rgba(0, 212, 255, 1) 100%);
 }
 
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .p-4 {
   padding: 1rem;
-}
-
-.p-0 {
-  padding: 0px;
 }
 
 .px-2 {
@@ -896,6 +813,10 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .font-mono {
@@ -971,20 +892,12 @@ body {
   font-weight: 600;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .leading-6 {
   line-height: 1.5rem;
 }
 
 .leading-\[4rem\] {
   line-height: 4rem;
-}
-
-.leading-relaxed {
-  line-height: 1.625;
 }
 
 .tracking-tight {
@@ -999,15 +912,6 @@ body {
 .text-custom-main {
   --tw-text-opacity: 1;
   color: rgb(247 248 250 / var(--tw-text-opacity, 1));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.underline {
-  text-decoration-line: underline;
 }
 
 @font-face {
@@ -1074,18 +978,6 @@ body {
 }
 
 @media (min-width: 640px) {
-  .sm\:col-start-1 {
-    grid-column-start: 1;
-  }
-
-  .sm\:col-start-5 {
-    grid-column-start: 5;
-  }
-
-  .sm\:col-start-6 {
-    grid-column-start: 6;
-  }
-
   .sm\:grid {
     display: grid;
   }
@@ -1110,10 +1002,6 @@ body {
   .sm\:text-left {
     text-align: left;
   }
-
-  .sm\:text-right {
-    text-align: right;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -1123,14 +1011,6 @@ body {
 
   .lg\:w-auto {
     width: auto;
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
-  }
-
-  .lg\:flex-row-reverse {
-    flex-direction: row-reverse;
   }
 
   .lg\:text-left {

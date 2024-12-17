@@ -2,7 +2,10 @@
 // trunk serve
 
 mod app;
-mod components;
+pub mod components;
+pub mod models;
+pub mod services;
+
 use app::App;
 
 fn main() {

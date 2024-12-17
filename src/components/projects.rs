@@ -1,15 +1,5 @@
 use yew::prelude::*;
-
-#[derive(Clone, PartialEq, Properties)]
-pub struct Project {
-    pub title: String,
-    pub subtitle: String,
-    pub description: String,
-    pub technologies: Vec<(String, String)>,
-    pub image_url: String,
-    pub links: Vec<(String, String)>,
-    pub reverse: bool,
-}
+use crate::models::Project;
 
 #[derive(Properties, PartialEq)]
 pub struct ProjectsProps {
@@ -28,14 +18,15 @@ pub fn projects(props: &ProjectsProps) -> Html {
                             "col-start-1",
                             "col-start-6",
                             "sm:text-left",
-                            "border-l sm:border-t border-b sm:border-b-0 border-l-custom-add border-b-custom-add sm:border-t-custom-add p-4"
+                            "border-l sm:border-t border-t sm:border-b-0 border-l-custom-add border-t-custom-add sm:border-t-custom-add p-4"
                         )
                     } else {
                         (
                             "col-start-5",
                             "col-start-1",
-                            "sm:text-right",
-                            "border-r border-b sm:border-b-0 sm:border-t border-r-custom-add border-b-custom-add sm:border-t-custom-add p-4"
+                            "text-right",
+                            // "border-l border-t sm:border-b-0 sm:border-t border-l-custom-add border-t-custom-add sm:border-t-custom-add p-4"
+                            "border-r border-t sm:border-b-0 sm:border-t border-r-custom-add border-t-custom-add sm:border-t-custom-add p-4"
                         )
                     };
 
@@ -45,11 +36,11 @@ pub fn projects(props: &ProjectsProps) -> Html {
                             <h3 class="text-sm">{ &project.subtitle }</h3>
                             <h4 class="text-lg text-custom-add">{ &project.title }</h4>
                             <p class="text-base mb-4 p-4 bg-custom-bg-add rounded-lg">{ &project.description }</p>
-                            <h4>{"Technologies used include:"}</h4>
-                           <ul class={format!("flex gap-2 {}", if project.reverse { "justify-start" } else { "justify-end" })}>
+                            <h4 class="font-semibold">{"Technologies used include:"}</h4>
+                            <ul class={format!("flex gap-3 text-base{}", if project.reverse { "justify-start" } else { "justify-end justify-end" })}>
                                 { for project.technologies.iter().map(|(name, url)|
                                     {html! {
-                                        <li>
+                                        <li class="hover:text-custom-active">
                                             <a href={url.clone()} target="_blank" rel="noopener noreferrer">{name}</a>
                                         </li>
                                     }
