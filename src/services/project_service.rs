@@ -1,4 +1,4 @@
-use crate::models::Project;
+use crate::models::{LinkItem, Project};
 
 pub fn get_projects() -> Vec<Project> {
     vec![
@@ -13,8 +13,8 @@ pub fn get_projects() -> Vec<Project> {
             ],
             image_url: "assets/img/workki.PNG".to_string(),
             links: vec![
-                ("Website".to_string(), "https://workkiai.com/".to_string()),
-                ("GitHub".to_string(), "https://github.com/example".to_string()),
+                // ("Website".to_string(), "https://workkiai.com/".to_string()),
+                // ("GitHub".to_string(), "https://github.com/example".to_string()),
             ],
             reverse: true,
             subtitle: "Workki AI".to_string(),
@@ -29,7 +29,12 @@ pub fn get_projects() -> Vec<Project> {
             ],
             image_url: "assets/img/thesis.PNG".to_string(),
             links: vec![
-                ("Thesis Report".to_string(), "https://www.theseus.fi/handle/10024/812819".to_string()),
+               LinkItem {
+                alt: Some("Theseus link".to_string()),
+                icon_url: Some("assets/icons/globe.svg".to_string()),
+                sr_text: Some("s".to_string()),
+                url: "https://www.theseus.fi/handle/10024/812819".to_string()
+                }
             ],
             reverse: false,
             subtitle: "Thesis Project".to_string(),
