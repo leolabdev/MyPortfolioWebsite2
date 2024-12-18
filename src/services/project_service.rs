@@ -31,7 +31,7 @@ pub fn get_projects() -> Vec<Project> {
                 LinkItem {
                     icon_url: Some("assets/icons/globe.svg".to_string()),
                     sr_text: Some("Altzone website".to_string()),
-                    url: "altzone.fi".to_string()
+                    url: "https://altzone.fi".to_string()
                 },
 
                 LinkItem {
@@ -39,11 +39,6 @@ pub fn get_projects() -> Vec<Project> {
                     sr_text: Some("Altzone-WebPages Github".to_string()),
                     url: "https://github.com/Alt-Org/Altzone-WebPages".to_string()
                 },
-                LinkItem {
-                    icon_url: Some("assets/icons/question.svg".to_string()),
-                    sr_text: Some("Altzone WebPages".to_string()),
-                    url: "https://altzone.fi".to_string()
-                }
             ],
             reverse: false,
         },
