@@ -8,7 +8,7 @@ pub fn get_projects() -> Vec<Project> {
             title: "Web pages".to_string(),
             description: "To date, I have successfully added end-to-end tests with Cypress, significantly enhancing application reliability. I adapted the frontend to meet evolving business needs and migrated static data and blog content to the Sanity CMS, optimizing content management workflows. Additionally, I updated SEO practices to align with the latest standards, resulting in improved search engine visibility and traffic. I continue to contribute to ongoing development and optimization efforts.".to_string(),
             technologies: vec![VUE, NUXT, CYPRESS, SANITY],
-            image_url: "assets/img/workki.PNG".to_string(),
+            image_url: "assets/img/workki.webp".to_string(),
             links: vec![
                 LinkItem {
                     icon_url: Some("assets/icons/globe.svg".to_string()),
@@ -51,7 +51,7 @@ pub fn get_projects() -> Vec<Project> {
             description: "The thesis aimed to design and develop a web application dedicated to managing device content across various locations within LAB University of Applied Sciences, simplifying and streamlining the content update process. The project included a server-side data handling, a user-friendly admin panel, and a specialized view-app for each device.".to_string(),
             // technologies: vec![FSD, REACT, REDUX, FORMIK],
             technologies: vec![FSD, REACT, REDUX, FORMIK, TS, NODEJS, NEST, MONGODB, MONGOOSE, SOCKETIO],
-            image_url: "assets/img/thesis.PNG".to_string(),
+            image_url: "assets/img/thesis.webp".to_string(),
             links: vec![
                 LinkItem {
                     icon_url: Some("assets/icons/book.svg".to_string()),
@@ -69,7 +69,7 @@ pub fn get_projects() -> Vec<Project> {
             description: "A prototype user interface for a web app using a modular approach and modern technologies. Implemented Feature-Sliced Design, React, Redux Toolkit, Formik, Yup, TypeScript, and tested with Jest and React Testing Library. A storybook and Loki for visual regression testing were also integrated.".to_string(),
             // technologies: vec![FSD, REACT, REDUX, TS, JEST, RTL],
             technologies: vec![FSD, REACT, REDUX, FORMIK, YUP, TS, JEST, RTL, STORYBOOK, LOKI, NODEJS, EXPRESS],
-            image_url: "assets/img/taskManager.PNG".to_string(),
+            image_url: "assets/img/taskManager.webp".to_string(),
             links: vec![
                 LinkItem {
                     icon_url: Some("assets/icons/github.svg".to_string()),
@@ -111,7 +111,7 @@ pub fn get_projects() -> Vec<Project> {
             title: "Sensors on wheels".to_string(),
             description: "An application for remotely controlling a robot, saving, and displaying collected environmental data. This was part of the Helsinki University environmental sensing project competition.".to_string(),
             technologies: vec![TS, CANVAS, REACT_ELECTRON],
-            image_url: "assets/img/robo.PNG".to_string(),
+            image_url: "assets/img/robo.webp".to_string(),
             links: vec![
                 LinkItem {
                     icon_url: Some("assets/icons/github.svg".to_string()),
@@ -137,7 +137,7 @@ pub fn get_projects() -> Vec<Project> {
             title: "Smart App".to_string(),
             description: "An application for managing smart devices. A hobby project with friends to practice skills. Implemented part of backend using NestJS, implemented MobX, and set up locales with i18n. Currently on hold.".to_string(),
             technologies: vec![TS, NEST, ERD, MOBX, I18N],
-            image_url: "assets/img/smartApp.PNG".to_string(),
+            image_url: "assets/img/smartApp.webp".to_string(),
             links: vec![
                 LinkItem {
                     icon_url: Some("assets/icons/github.svg".to_string()),
@@ -158,7 +158,7 @@ pub fn get_projects() -> Vec<Project> {
             title: "Random API".to_string(),
             description: "Random API lets you add any kind of data and use it later as needed. Created the frontend using React and Bootstrap. Useful for generating random data (e.g. firstname-lastname pairs) easily.".to_string(),
             technologies: vec![JS, REACT, BOOTSTRAP],
-            image_url: "assets/img/randomAPI.PNG".to_string(),
+            image_url: "assets/img/randomAPI.webp".to_string(),
             links: vec![
                 LinkItem {
                     icon_url: Some("assets/icons/github.svg".to_string()),
@@ -179,7 +179,7 @@ pub fn get_projects() -> Vec<Project> {
             title: "Door Tablet App".to_string(),
             description: "Application for class tablets at LAB UAS showing booking info. Recreated the app from scratch, updated dependencies, refactored logic into services, and added SSR support (Angular Universal), although later deemed unnecessary. Learned basics of Angular.".to_string(),
             technologies: vec![TS, ANGULAR, RXJS, FULLCALENDAR],
-            image_url: "assets/img/doorApp.PNG".to_string(),
+            image_url: "assets/img/doorApp.webp".to_string(),
             links: vec![],
             reverse: true,
         },
@@ -189,7 +189,7 @@ pub fn get_projects() -> Vec<Project> {
             title: "Map App".to_string(),
             description: "A tool to help delivery companies find the best route between places. First React project. Learned basics of React and React Leaflet. Realized importance of state management libraries after encountering props issues.".to_string(),
             technologies: vec![JS, REACT, RLEAFLET, CSS],
-            image_url: "assets/img/mapApp2.PNG".to_string(),
+            image_url: "assets/img/mapApp2.webp".to_string(),
             links: vec![
                 LinkItem {
                     icon_url: Some("assets/icons/github.svg".to_string()),
@@ -215,7 +215,7 @@ pub fn get_projects() -> Vec<Project> {
             title: "Students App".to_string(),
             description: "App to handle students’ directory. Two APIs (api1 & api2) with students records in MongoDB. Api1 receives requests from frontend and forwards to Api2. Learned about Express and MongoDB structure.".to_string(),
             technologies: vec![TS, EXPRESS, Technology {name:"Handlebars", url:"https://handlebarsjs.com/"}, MONGODB, MONGOOSE],
-            image_url: "assets/img/StudentsApp.PNG".to_string(),
+            image_url: "assets/img/StudentsApp.webp".to_string(),
             links: vec![
                 LinkItem {
                     icon_url: Some("assets/icons/github.svg".to_string()),
@@ -231,7 +231,7 @@ pub fn get_projects() -> Vec<Project> {
             title: "Converter".to_string(),
             description: "A currency converter app created for a course. Built with Angular, TypeScript, and Angular Material. Learned basics of Angular and UI frameworks.".to_string(),
             technologies: vec![HTML5, CSS, TS, ANGULAR],
-            image_url: "assets/img/Converter.PNG".to_string(),
+            image_url: "assets/img/Converter.webp".to_string(),
             links: vec![
                 LinkItem {
                     icon_url: Some("assets/icons/github.svg".to_string()),
@@ -247,7 +247,7 @@ pub fn get_projects() -> Vec<Project> {
             title: "Terrain game".to_string(),
             description: "A Unity project learning how to create terrain levels, add effects, and basic animations. Realized the fun and complexity of game development.".to_string(),
             technologies: vec![UNITY, CSHARP],
-            image_url: "assets/img/terrainGame.PNG".to_string(),
+            image_url: "assets/img/terrainGame.webp".to_string(),
             links: vec![
                 LinkItem {
                     icon_url: Some("assets/icons/youtube.svg".to_string()),
@@ -263,7 +263,7 @@ pub fn get_projects() -> Vec<Project> {
             title: "Weather station".to_string(),
             description: "Built a weather station to monitor atmosphere data. Sends data to the cloud via NodeMCU. Used Azure IoT Hub. Ideal for remote monitoring systems. Learned IoT basics.".to_string(),
             technologies: vec![ARDUINO, AZURE, FRITZING, DRAWIO],
-            image_url: "assets/img/IoT.PNG".to_string(),
+            image_url: "assets/img/IoT.webp".to_string(),
             links: vec![
                 LinkItem {
                     icon_url: Some("assets/icons/book.svg".to_string()),
@@ -279,7 +279,7 @@ pub fn get_projects() -> Vec<Project> {
             title: "Weather station (proto)".to_string(),
             description: "Got introduced to IoT. Set up software, alert messages, connected sensors and created circuits. Used Raspberry Pi, Domoticz, and Prowl. This project served as a starting point for the later weather station project.".to_string(),
             technologies: vec![Technology {name:"Linux/Raspberry Pi", url:"https://www.raspberrypi.com/"}, DOMOTICZ, PROWL, FRITZING, DRAWIO],
-            image_url: "assets/img/weatherSPrototype.PNG".to_string(),
+            image_url: "assets/img/weatherSPrototype.webp".to_string(),
             links: vec![
                 LinkItem {
                     icon_url: Some("assets/icons/book.svg".to_string()),

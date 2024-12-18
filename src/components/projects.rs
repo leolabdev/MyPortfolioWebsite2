@@ -64,6 +64,7 @@ pub fn projects(props: &ProjectsProps) -> Html {
                                 src={project.image_url}
                                 alt={format!("Screenshot of {}", project.title)}
                                 class={format!("rounded-3xl mt-4 col-span-5 {} row-start-1 row-end-2 {}", image_col_start, border_class)}
+                                loading="lazy"
                             />
                         </article>
                     }
