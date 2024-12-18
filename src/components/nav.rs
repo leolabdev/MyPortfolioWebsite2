@@ -7,7 +7,7 @@ pub fn nav() -> Html {
             <ul class="flex flex-wrap justify-center items-center gap-8 max-w-[1200px] mx-auto">
                 <li class="w-full text-center lg:w-auto lg:text-left lg:mr-auto">
                     <h1 class="text-2xl group hover:text-custom-active inline-flex font-sans tracking-tight">
-                        <a href="/" class="">
+                        <a href="/MyPortfolioWebsite2" class="">
                            <b class="font-semibold">
                            <span class="fab fa-node-js pr-2 text-custom-add group-hover:text-custom-active" aria-hidden="true"></span>
                               {"Leo Hannolainen"}
