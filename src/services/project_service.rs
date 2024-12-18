@@ -23,7 +23,7 @@ pub fn get_projects() -> Vec<Project> {
         Project {
             subtitle: "Psyche's Royale Gaming ry / Volunteer work".to_string(),
             title: "Altzone webpages".to_string(),
-            description: "I am solely responsible for the implementation of the webpages. Currently working on pages that provide comprehensive information about the project and its participants. Future plans include news publishing and forum features. The project uses a modular development approach, tested modules, and will move towards SSR with Next.js.".to_string(),
+            description: "I started these pages on my own, handling everything from layout and styling to decisions about the project's structure and design. As the project grew and the demands became more complex, I gradually began delegating responsibilities to new team members to manage the workload and maintain steady progress. Over time, I transitioned into the role of a technical lead, focusing on code reviews, ensuring the architecture remains scalable and maintainable, and supporting the team. I still occasionally implement key features, especially to set a standard or push the project forward.".to_string(),
             technologies: vec![FSD, REACT, NEXTJS, TS],
             // technologies: vec![FSD, REACT, NEXTJS, TS, JEST, RTL, STORYBOOK],
             image_url: "assets/img/altZone.PNG".to_string(),
