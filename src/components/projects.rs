@@ -37,7 +37,7 @@ pub fn projects(props: &ProjectsProps) -> Html {
                                                         <img
                                                         src={icon_url}
                                                         alt={link.sr_text.clone()}
-                                                        class="w-4 h-4 m- inline-block ml-2 mb-[2px] filter invert brightness-0"
+                                                        class="w-6 h-6 inline-block ml-2 mb-[2px] filter invert brightness-0"
                                                     />
                                                 }
                                             } else {
