@@ -50,20 +50,20 @@ pub fn projects(props: &ProjectsProps) -> Html {
 
                                 <p class="text-base mb-4 p-4 bg-custom-bg-add rounded-lg">{ &project.description }</p>
                                 <h4 class="font-semibold">{"Technologies used include:"}</h4>
-                                <ul class={format!("flex gap-3 text-base {}", if project.reverse { "justify-start" } else { "justify-end" })}>
-                                    { technologies.into_iter().map(|tech| html! {
-                                        <li class="hover:text-custom-active">
+                                    <ul class={format!("flex flex-wrap gap-[6px] text-base {}", if project.reverse { "justify-start" } else { "justify-end" })}>
+                                        { technologies.into_iter().map(|tech| html! {
+                                         <li class="hover:text-custom-active">
                                             <a href={tech.url} target="_blank" rel="noopener noreferrer">
                                                 { tech.name }
-                                            </a>
-                                        </li>
-                                    }).collect::<Html>() }
-                                </ul>
+                                                             </a>
+                                                               </li>
+                                       }).collect::<Html>() }
+                                    </ul>
                             </div>
                             <img
                                 src={project.image_url}
                                 alt={format!("Screenshot of {}", project.title)}
-                                class={format!("rounded-3xl col-span-5 {} row-start-1 row-end-2 {}", image_col_start, border_class)}
+                                class={format!("rounded-3xl mt-4 col-span-5 {} row-start-1 row-end-2 {}", image_col_start, border_class)}
                             />
                         </article>
                     }

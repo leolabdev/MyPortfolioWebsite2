@@ -1,63 +1,5 @@
 use crate::models::{LinkItem, Project, Technology};
 
-// #[derive(Clone)]
-// struct Technology {
-//     name: &'static str,
-//     url: &'static str,
-// }
-
-// pub fn get_projects() -> Vec<Project> {
-//     vec![
-//         Project {
-//             subtitle: "Workki AI".to_string(),
-//             title: "Web pages".to_string(),
-//             description: "To date, I have successfully added end-to-end tests with Cypress, significantly enhancing application reliability. I adapted the frontend to meet evolving business needs and migrated static data and blog content to the Sanity CMS, optimizing content management workflows. Additionally, I updated SEO practices to align with the latest standards, resulting in improved search engine visibility and traffic. I continue to contribute to ongoing development and optimization efforts.".to_string(),
-//             technologies: vec![VUE, NUXT, CYPRESS, SANITY],
-//             image_url: "assets/img/workki.PNG".to_string(),
-//             links: vec![
-//             ],
-//             reverse: true,
-//         },
-//         Project {
-//             subtitle: "Thesis Project".to_string(),
-//             title: "Thesis Project".to_string(),
-//             description: "Designed and developed a web application for managing device content across LAB UAS.".to_string(),
-//             technologies: vec![REACT, REDUX, NEST],
-//             image_url: "assets/img/thesis.PNG".to_string(),
-//             links: vec![
-//                LinkItem {
-//                 icon_url: Some("assets/icons/globe.svg".to_string()),
-//                 sr_text: Some("s".to_string()),
-//                 url: "https://www.theseus.fi/handle/10024/812819".to_string()
-//                 }
-//             ],
-//             reverse: false,
-//         },
-//
-//         Project {
-//             subtitle: "Psyche's Royale Gaming ry / Volunteer work".to_string(),
-//             title: "Altzone webpages".to_string(),
-//             description: "I am solely responsible for the implementation of the webpages. Currently working on pages that provide comprehensive information about the project and its participants. Future plans include news publishing and forum features. The project uses a modular development approach, tested modules, and will move towards SSR with Next.js.".to_string(),
-//             technologies: vec![FSD, REACT, NEXTJS, TS, JEST],
-//             // technologies: vec![FSD, REACT, NEXTJS, TS, JEST, RTL, STORYBOOK],
-//             image_url: "assets/img/altZone.PNG".to_string(),
-//             links: vec![
-//                 LinkItem {
-//                     icon_url: Some("assets/icons/github.svg".to_string()),
-//                     sr_text: Some("Altzone-WebPages Github".to_string()),
-//                     url: "https://github.com/Alt-Org/Altzone-WebPages".to_string()
-//                 },
-//                 LinkItem {
-//                     icon_url: Some("assets/icons/question.svg".to_string()),
-//                     sr_text: Some("Altzone WebPages".to_string()),
-//                     url: "https://altzone.fi/".to_string()
-//                 }
-//             ],
-//             reverse: true,
-//         },
-//     ]
-// }
-
 pub fn get_projects() -> Vec<Project> {
     vec![
         // Workki AI
@@ -76,6 +18,37 @@ pub fn get_projects() -> Vec<Project> {
             ],
             reverse: true,
         },
+
+         // Psyche's Royale Gaming ry (Altzone webpages)
+        Project {
+            subtitle: "Psyche's Royale Gaming ry / Volunteer work".to_string(),
+            title: "Altzone webpages".to_string(),
+            description: "I am solely responsible for the implementation of the webpages. Currently working on pages that provide comprehensive information about the project and its participants. Future plans include news publishing and forum features. The project uses a modular development approach, tested modules, and will move towards SSR with Next.js.".to_string(),
+            technologies: vec![FSD, REACT, NEXTJS, TS],
+            // technologies: vec![FSD, REACT, NEXTJS, TS, JEST, RTL, STORYBOOK],
+            image_url: "assets/img/altZone.PNG".to_string(),
+            links: vec![
+                LinkItem {
+                    icon_url: Some("assets/icons/globe.svg".to_string()),
+                    sr_text: Some("Altzone website".to_string()),
+                    url: "altzone.fi".to_string()
+                },
+
+                LinkItem {
+                    icon_url: Some("assets/icons/github.svg".to_string()),
+                    sr_text: Some("Altzone-WebPages Github".to_string()),
+                    url: "https://github.com/Alt-Org/Altzone-WebPages".to_string()
+                },
+                LinkItem {
+                    icon_url: Some("assets/icons/question.svg".to_string()),
+                    sr_text: Some("Altzone WebPages".to_string()),
+                    url: "https://altzone.fi".to_string()
+                }
+            ],
+            reverse: false,
+        },
+
+
         // Thesis project (Device View Management System)
         Project {
             subtitle: "Thesis project (LAB, UAS)".to_string(),
@@ -91,30 +64,9 @@ pub fn get_projects() -> Vec<Project> {
                     url: "https://www.theseus.fi/handle/10024/812819".to_string()
                 }
             ],
-            reverse: false,
-        },
-        // Psyche's Royale Gaming ry (Altzone webpages)
-        Project {
-            subtitle: "Psyche's Royale Gaming ry / Volunteer work".to_string(),
-            title: "Altzone webpages".to_string(),
-            description: "I am solely responsible for the implementation of the webpages. Currently working on pages that provide comprehensive information about the project and its participants. Future plans include news publishing and forum features. The project uses a modular development approach, tested modules, and will move towards SSR with Next.js.".to_string(),
-            technologies: vec![FSD, REACT, NEXTJS, TS],
-            // technologies: vec![FSD, REACT, NEXTJS, TS, JEST, RTL, STORYBOOK],
-            image_url: "assets/img/altZone.PNG".to_string(),
-            links: vec![
-                LinkItem {
-                    icon_url: Some("assets/icons/github.svg".to_string()),
-                    sr_text: Some("Altzone-WebPages Github".to_string()),
-                    url: "https://github.com/Alt-Org/Altzone-WebPages".to_string()
-                },
-                LinkItem {
-                    icon_url: Some("assets/icons/question.svg".to_string()),
-                    sr_text: Some("Altzone WebPages".to_string()),
-                    url: "https://altzone.fi/".to_string()
-                }
-            ],
             reverse: true,
         },
+       
         // School investigation project (Task Manager)
         Project {
             subtitle: "School investigation project".to_string(),
