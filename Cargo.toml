@@ -5,4 +5,5 @@ edition = "2021"
 
 [dependencies]
 stylist = { version = "0.13.0", features = ["yew", "parser"] }
-yew = { git = "https://github.com/yewstack/yew/", features = ["csr"] }
+yew = { git = "https://github.com/yewstack/yew/", features = ["csr", "ssr"] }
+tokio = "1.42.0"

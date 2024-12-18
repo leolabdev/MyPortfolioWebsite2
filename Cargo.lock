@@ -7,6 +7,7 @@ name = "MyPortfolioWebsite2"
 version = "0.1.0"
 dependencies = [
  "stylist",
+ "tokio",
  "yew 0.21.0 (git+https://github.com/yewstack/yew/)",
 ]
 
@@ -51,6 +52,12 @@ dependencies = [
  "rustc-demangle",
  "windows-targets",
 ]
+
+[[package]]
+name = "base64ct"
+version = "1.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8c3c1a368f70d6cf7302d78f8f7093da241fb8e8807c05cc9e51a125895a6d5b"
 
 [[package]]
 name = "bincode"
@@ -643,6 +650,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d231dfb89cfffdbc30e7fc41579ed6066ad03abda9e567ccafae602b97ec5024"
 
 [[package]]
+name = "html-escape"
+version = "0.2.13"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6d1ad449764d627e22bfd7cd5e8868264fc9236e07c752972b4080cd351cb476"
+dependencies = [
+ "utf8-width",
+]
+
+[[package]]
 name = "http"
 version = "0.2.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1204,6 +1220,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "adb9e6ca4f869e1180728b7950e35922a7fc6397f7b641499e8f3ef06e50dc83"
 
 [[package]]
+name = "utf8-width"
+version = "0.1.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "86bd8d4e895da8537e5315b8254664e6b769c4ff3db18321b297a1e7004392e3"
+
+[[package]]
 name = "version_check"
 version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1395,9 +1417,12 @@ name = "yew"
 version = "0.21.0"
 source = "git+https://github.com/yewstack/yew/#6bec0ec56a29098e9dfe5a66d18424fe3bd51c01"
 dependencies = [
+ "base64ct",
+ "bincode",
  "console_error_panic_hook",
  "futures",
  "gloo 0.11.0",
+ "html-escape",
  "implicit-clone 0.5.0",
  "indexmap",
  "js-sys",
