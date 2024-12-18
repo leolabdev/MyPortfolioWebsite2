@@ -25,7 +25,7 @@ pub fn nav() -> Html {
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/leolab1337" target="_blank" class="rounded">
+                    <a href="https://github.com/leolabdev" target="_blank" class="rounded">
                         <span class="fab fa-github-square text-custom-add hover:text-custom-active text-[150%]" aria-hidden="true"></span>
                         <span class="sr-only">{"GitHub"}</span>
                     </a>
