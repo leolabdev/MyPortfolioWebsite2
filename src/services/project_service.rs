@@ -9,6 +9,7 @@ use crate::models::{LinkItem, Project, Technology};
 pub fn get_projects() -> Vec<Project> {
     vec![
         Project {
+            subtitle: "Workki AI".to_string(),
             title: "Web pages".to_string(),
             description: "To date, I have successfully added end-to-end tests with Cypress, significantly enhancing application reliability. I adapted the frontend to meet evolving business needs and migrated static data and blog content to the Sanity CMS, optimizing content management workflows. Additionally, I updated SEO practices to align with the latest standards, resulting in improved search engine visibility and traffic. I continue to contribute to ongoing development and optimization efforts.".to_string(),
             technologies: vec![VUE, NUXT, CYPRESS, SANITY],
@@ -18,9 +19,9 @@ pub fn get_projects() -> Vec<Project> {
                 // ("GitHub".to_string(), "https://github.com/example".to_string()),
             ],
             reverse: true,
-            subtitle: "Workki AI".to_string(),
         },
         Project {
+            subtitle: "Thesis Project".to_string(),
             title: "Thesis Project".to_string(),
             description: "Designed and developed a web application for managing device content across LAB UAS.".to_string(),
             technologies: vec![REACT, REDUX, NEST],
@@ -33,7 +34,6 @@ pub fn get_projects() -> Vec<Project> {
                 }
             ],
             reverse: false,
-            subtitle: "Thesis Project".to_string(),
         },
     ]
 }
