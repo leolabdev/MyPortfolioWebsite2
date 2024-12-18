@@ -24,8 +24,8 @@ pub fn get_projects() -> Vec<Project> {
             subtitle: "Psyche's Royale Gaming ry / Volunteer work".to_string(),
             title: "Altzone webpages".to_string(),
             description: "I started these pages on my own, handling everything from layout and styling to decisions about the project's structure and design. As the project grew and the demands became more complex, I gradually began delegating responsibilities to new team members to manage the workload and maintain steady progress. Over time, I transitioned into the role of a technical lead, focusing on code reviews, ensuring the architecture remains scalable and maintainable, and supporting the team. I still occasionally implement key features, especially to set a standard or push the project forward.".to_string(),
-            technologies: vec![FSD, REACT, NEXTJS, TS],
-            // technologies: vec![FSD, REACT, NEXTJS, TS, JEST, RTL, STORYBOOK],
+            // technologies: vec![FSD, REACT, NEXTJS, TS],
+            technologies: vec![FSD, REACT, REDUX, NEXTJS, TS, JEST, RTL, STORYBOOK],
             image_url: "assets/img/altZone.PNG".to_string(),
             links: vec![
                 LinkItem {
@@ -49,8 +49,8 @@ pub fn get_projects() -> Vec<Project> {
             subtitle: "Thesis project (LAB, UAS)".to_string(),
             title: "Device View Management System".to_string(),
             description: "The thesis aimed to design and develop a web application dedicated to managing device content across various locations within LAB University of Applied Sciences, simplifying and streamlining the content update process. The project included a server-side data handling, a user-friendly admin panel, and a specialized view-app for each device.".to_string(),
-            technologies: vec![FSD, REACT, REDUX, FORMIK],
-            // technologies: vec![FSD, REACT, REDUX, FORMIK, TS, NODEJS, NEST, MONGODB, MONGOOSE, SOCKETIO],
+            // technologies: vec![FSD, REACT, REDUX, FORMIK],
+            technologies: vec![FSD, REACT, REDUX, FORMIK, TS, NODEJS, NEST, MONGODB, MONGOOSE, SOCKETIO],
             image_url: "assets/img/thesis.PNG".to_string(),
             links: vec![
                 LinkItem {
@@ -67,8 +67,8 @@ pub fn get_projects() -> Vec<Project> {
             subtitle: "School investigation project".to_string(),
             title: "Task Manager".to_string(),
             description: "A prototype user interface for a web app using a modular approach and modern technologies. Implemented Feature-Sliced Design, React, Redux Toolkit, Formik, Yup, TypeScript, and tested with Jest and React Testing Library. A storybook and Loki for visual regression testing were also integrated.".to_string(),
-            technologies: vec![FSD, REACT, REDUX, TS, JEST, RTL],
-            // technologies: vec![FSD, REACT, REDUX, TS, JEST, RTL, STORYBOOK, LOKI, EXPRESS],
+            // technologies: vec![FSD, REACT, REDUX, TS, JEST, RTL],
+            technologies: vec![FSD, REACT, REDUX, FORMIK, YUP, TS, JEST, RTL, STORYBOOK, LOKI, NODEJS, EXPRESS],
             image_url: "assets/img/taskManager.PNG".to_string(),
             links: vec![
                 LinkItem {
@@ -110,7 +110,7 @@ pub fn get_projects() -> Vec<Project> {
             subtitle: "Environmental sensing project competition(2022)".to_string(),
             title: "Sensors on wheels".to_string(),
             description: "An application for remotely controlling a robot, saving, and displaying collected environmental data. This was part of the Helsinki University environmental sensing project competition.".to_string(),
-            technologies: vec![TS, Technology { name: "Canvas", url: "https://www.w3schools.com/html/html5_canvas.asp" }, REACT],
+            technologies: vec![TS, CANVAS, REACT_ELECTRON],
             image_url: "assets/img/robo.PNG".to_string(),
             links: vec![
                 LinkItem {
@@ -157,7 +157,7 @@ pub fn get_projects() -> Vec<Project> {
             subtitle: "Hobby Project".to_string(),
             title: "Random API".to_string(),
             description: "Random API lets you add any kind of data and use it later as needed. Created the frontend using React and Bootstrap. Useful for generating random data (e.g. firstname-lastname pairs) easily.".to_string(),
-            technologies: vec![Technology {name:"JavaScript", url:"https://www.javascript.com/"}, REACT, BOOTSTRAP],
+            technologies: vec![JS, REACT, BOOTSTRAP],
             image_url: "assets/img/randomAPI.PNG".to_string(),
             links: vec![
                 LinkItem {
@@ -188,7 +188,7 @@ pub fn get_projects() -> Vec<Project> {
             subtitle: "Big-Flash - Internship".to_string(),
             title: "Map App".to_string(),
             description: "A tool to help delivery companies find the best route between places. First React project. Learned basics of React and React Leaflet. Realized importance of state management libraries after encountering props issues.".to_string(),
-            technologies: vec![Technology {name:"JavaScript", url:"https://www.javascript.com/"}, REACT, RLEAFLET, CSS],
+            technologies: vec![JS, REACT, RLEAFLET, CSS],
             image_url: "assets/img/mapApp2.PNG".to_string(),
             links: vec![
                 LinkItem {
@@ -312,6 +312,17 @@ const REACT: Technology = Technology {
     name: "React",
     url: "https://react.dev/",
 };
+
+const REACT_ELECTRON: Technology = Technology {
+    name: "React+Electron",
+    url: "https://electron-react-boilerplate.js.org/",
+};
+
+const CANVAS: Technology = Technology {
+    name: "Canvas",
+    url: "https://www.w3schools.com/html/html5_canvas.asp",
+};
+
 const REDUX: Technology = Technology {
     name: "Redux Toolkit",
     url: "https://redux-toolkit.js.org/",
@@ -328,6 +339,12 @@ const TS: Technology = Technology {
     name: "TypeScript",
     url: "https://www.typescriptlang.org/",
 };
+
+const JS: Technology = Technology {
+    name: "JavaScript",
+    url: "https://www.javascript.com/",
+};
+
 const NODEJS: Technology = Technology {
     name: "Node.js",
     url: "https://nodejs.org/en",
