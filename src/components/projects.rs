@@ -11,8 +11,8 @@ pub fn projects(props: &ProjectsProps) -> Html {
     let projects = props.projects.clone();
 
     html! {
-        <section id="projects" class="text-custom-main px-4 py-16 max-w-6xl mx-auto">
-            <h2 class="text-2xl mb-8">{"Projects I'm proud of"}</h2>
+        <section id="projects" class="text-custom-main px-4 xl:px-0 py-16 max-w-[1200px] mx-auto">
+            <h2 class="text-4xl mb-14 font-bold">{"Projects I'm proud of"}</h2>
             <div class="grid gap-8">
                 { for projects.into_iter().map(|project| {
                     let links = project.links.clone();
@@ -50,7 +50,7 @@ pub fn projects(props: &ProjectsProps) -> Html {
 
                                 <p class="text-base mb-4 p-4 bg-custom-bg-add rounded-lg">{ &project.description }</p>
                                 <h4 class="font-semibold">{"Technologies used include:"}</h4>
-                                    <ul class={format!("flex flex-wrap gap-[6px] text-base {}", if project.reverse { "justify-start" } else { "justify-end" })}>
+                                    <ul class={format!("flex flex-wrap gap-[6px] text-base max-w-[80%] {}", if project.reverse { "justify-start" } else { "ml-auto justify-end" })}>
                                         { technologies.into_iter().map(|tech| html! {
                                          <li class="hover:text-custom-active">
                                             <a href={tech.url} target="_blank" rel="noopener noreferrer">

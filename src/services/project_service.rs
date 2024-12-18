@@ -25,7 +25,7 @@ pub fn get_projects() -> Vec<Project> {
             title: "Altzone webpages".to_string(),
             description: "I started these pages on my own, handling everything from layout and styling to decisions about the project's structure and design. As the project grew and the demands became more complex, I gradually began delegating responsibilities to new team members to manage the workload and maintain steady progress. Over time, I transitioned into the role of a technical lead, focusing on code reviews, ensuring the architecture remains scalable and maintainable, and supporting the team. I still occasionally implement key features, especially to set a standard or push the project forward.".to_string(),
             // technologies: vec![FSD, REACT, NEXTJS, TS],
-            technologies: vec![FSD, REACT, REDUX, NEXTJS, TS, JEST, RTL, STORYBOOK],
+            technologies: vec![FSD, REACT, REDUX, NEXTJS, TS, JEST, RTL, STORYBOOK, DIRECTUS],
             image_url: "assets/img/altZone.PNG".to_string(),
             links: vec![
                 LinkItem {
@@ -308,6 +308,12 @@ const SANITY: Technology = Technology {
     name: "Sanity CMS",
     url: "https://www.sanity.io/",
 };
+
+const DIRECTUS: Technology = Technology {
+    name: "Directus CMS",
+    url: "https://directus.io/",
+};
+
 const REACT: Technology = Technology {
     name: "React",
     url: "https://react.dev/",
