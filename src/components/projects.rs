@@ -10,7 +10,6 @@ pub struct Project {
     pub links: Vec<(String, String)>,
     pub reverse: bool,
 }
-
 #[derive(Properties, PartialEq)]
 pub struct ProjectsProps {
     pub projects: Vec<Project>,
