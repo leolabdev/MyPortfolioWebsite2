@@ -11,7 +11,6 @@ use yew::prelude::*;
 #[function_component(App)]
 pub fn app() -> Html {
     let projects = project_service::get_projects();
-
     html! {
         <div class="bg-custom-bg-main">
             <Nav />
