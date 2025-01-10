@@ -21,6 +21,7 @@ pub fn app() -> Html {
             <Contact />
             <Gradient />
             <Footer />
+
         </div>
     }
 }
